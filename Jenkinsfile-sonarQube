@@ -17,7 +17,7 @@ pipeline {
             }
             steps {
 
-                withSonarQubeEnv('vikrant-sonar-scan') {
+                withSonarQubeEnv('sonarqube-server') {
                    sh "${scannerHome}/bin/sonar-scanner"
                     
                 }
